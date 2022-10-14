@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bnf-RE-acf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Wad-LE-Xd7">
+            <objects>
+                <viewController id="bnf-RE-acf" customClass="ViewController" customModule="Technicalisto_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbX-Ap-9qv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3o-YE-pFM">
+                                <rect key="frame" x="20" y="268" width="374" height="370"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="mEh-9r-mYN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMG-Yq-j1b">
+                                <rect key="frame" x="92" y="198" width="230" height="40"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="LUI-WQ-aW0"/>
+                                    <constraint firstAttribute="height" constant="40" id="U8Z-yF-p4A"/>
+                                </constraints>
+                                <state key="normal" title="Record a Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordTapped:" destination="bnf-RE-acf" eventType="touchUpInside" id="VA5-T4-t2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-OW-3gC">
+                                <rect key="frame" x="92" y="668" width="230" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="aZF-1V-cyy"/>
+                                    <constraint firstAttribute="height" constant="40" id="dch-h1-S0p"/>
+                                </constraints>
+                                <state key="normal" title="Display Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayVideoTapped:" destination="bnf-RE-acf" eventType="touchUpInside" id="W40-4p-DC7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technicalisto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-Ty-saP">
+                                <rect key="frame" x="157" y="137" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pak-Av-R2G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UMG-Yq-j1b" firstAttribute="centerX" secondItem="Pak-Av-R2G" secondAttribute="centerX" id="Ea8-5b-ecJ"/>
+                            <constraint firstItem="UMG-Yq-j1b" firstAttribute="top" secondItem="pZN-Ty-saP" secondAttribute="bottom" constant="40" id="LYe-oM-ZoA"/>
+                            <constraint firstItem="pZN-Ty-saP" firstAttribute="centerX" secondItem="Pak-Av-R2G" secondAttribute="centerX" id="bvQ-nT-SEI"/>
+                            <constraint firstItem="hvZ-OW-3gC" firstAttribute="top" secondItem="v3o-YE-pFM" secondAttribute="bottom" constant="30" id="cu9-kF-dL5"/>
+                            <constraint firstItem="v3o-YE-pFM" firstAttribute="centerY" secondItem="Pak-Av-R2G" secondAttribute="centerY" id="gDq-bW-0Tm"/>
+                            <constraint firstItem="v3o-YE-pFM" firstAttribute="leading" secondItem="Pak-Av-R2G" secondAttribute="leading" constant="20" id="hAm-I6-wkm"/>
+                            <constraint firstItem="v3o-YE-pFM" firstAttribute="top" secondItem="UMG-Yq-j1b" secondAttribute="bottom" constant="30" id="iSD-CE-7bR"/>
+                            <constraint firstItem="hvZ-OW-3gC" firstAttribute="centerX" secondItem="Pak-Av-R2G" secondAttribute="centerX" id="lD8-fs-Xcr"/>
+                            <constraint firstItem="Pak-Av-R2G" firstAttribute="trailing" secondItem="v3o-YE-pFM" secondAttribute="trailing" constant="20" id="q0w-GU-DSj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="v3o-YE-pFM" id="MW0-iJ-ld3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GT2-Ym-aSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21742.028985507248" y="2760.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
